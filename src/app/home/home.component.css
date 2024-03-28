@@ -1,0 +1,196 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Basic image positioning and container sizing */
+.slider-container {
+    width: 700px; /* Match image width for one visible image */
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+
+.slider-images {
+    position: relative;
+    display: flex;
+    animation: slide 50s infinite ease-in-out; /* Total animation time */
+}
+
+/* Ensure uniform image dimensions and scaling */
+.slider-images img {
+    width: 700px; /* Set desired width */
+    height: 500px; /* Set desired height */
+    object-fit: contain ; /* Fill container while preserving aspect ratio */
+}
+
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.t img{
+    height:300px;
+    width: 300px;
+}
+.t{
+    display: flex;
+    flex-wrap: wrap;
+   
+    gap: 20px;
+  justify-content:center
+}
+.c1{
+    text-align: center;
+    flex:0 1 25%;
+    margin: 10px;
+    gap:1rem;
+    background-color: antiquewhite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.c1 img{
+    height:250px;
+    width:300px;
+}
+.c1:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(185, 166, 142);
+}
+.us{
+    height: 30lvh;
+    margin-top: 5rem;
+    background-color:rgb(78, 77, 77);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.us h2{
+    margin-top: 10px;
+    padding: 10px;
+}
+.o{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+footer{
+    height:30lvh;
+    margin-top: -1rem;
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+}
+footer ul{
+    
+    list-style-type: none;
+    
+}
+footer ul li{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+   line-height: 1.3rem;
+   justify-content: center;
+   margin-left: -2rem;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-700px); /* 20% per image (5s each) */
+    }
+    40% {
+        transform: translateX(-1400px);
+    }
+    60% {
+        transform: translateX(-2100px);
+    }
+    80% {
+        transform: translateX(-2800px);
+    }
+    100%{
+        transform: translate(0%);
+    }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 36rem)  {
+
+   
+    .slider-container {
+        width: 350px; /* Match image width for one visible image */
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    .slider-images {
+        position: relative;
+        display: flex;
+        animation: slide 50s  ease-in-out infinite;
+        /* Total animation time */
+    }
+    
+    /* Ensure uniform image dimensions and scaling */
+    .slider-images img {
+        max-width: 350px; /* Set desired width */
+        max-height: 500px; /* Set desired height */
+        object-fit: contain ; /* Fill container while preserving aspect ratio */
+    }
+    
+    /* Animation styles for image display time and loop */
+    @keyframes slide-small {
+        0% {
+          transform: translateX(0); /* Start at position 0 */
+        }
+        10% { /* Hold image fully visible for 8 seconds */
+            transform: translateX(0);
+          }
+        30% { /* Start transition to next image */
+          transform: translateX(-350px);
+        }
+        50% { /* Complete transition in 20 seconds */
+          transform: translateX(-700px);
+        }
+        /* Add more steps for additional images */
+        70% {
+          transform: translateX(-1050px);
+        }
+        90% {
+          transform: translateX(-1400px);
+        }
+        100% {
+          transform: translateX(-1750px);
+          animation-delay: 5s; /* Adjust distance based on image count */
+
+        }
+       
+        
+      }
+      /* Apply slide-small animation for mobile screens */
+      .slider-images {
+        animation: slide-small 80s infinite ease-in-out; /* Total duration 70s */
+      }
+
+}

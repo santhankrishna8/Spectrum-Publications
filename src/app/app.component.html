@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <nav>
+        <a routerLink="/home"  routerLinkActive="activebutton" ariaCurrentWhenActive="page"><img  src="/assets/logo.jpg " /></a>
+        <a class="btn-cn"routerLink="/home"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="margin: 5px;"><a style="margin-left: 10px;"></a>Spectrum<br> <a>Publications</a></a>
+        <a class="btn-books" routerLink="/about" routerLinkActive="activebutton" ariaCurrentWhenActive="page">About Us</a>
+        <a class="btn-books" routerLink="/books" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Books <i class="fa fa-caret-down"></i></a>
+        <a class="btn-books" routerLink="/contact" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Contact</a>
+    </nav>
+    <router-outlet>
+
+    </router-outlet>
+</body>
+</html>
