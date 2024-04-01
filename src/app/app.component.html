@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <nav>
         <a routerLink="/home"  routerLinkActive="activebutton" ariaCurrentWhenActive="page"><img  src="/assets/logo.jpg " /></a>
         <a class="btn-cn"routerLink="/home"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="margin: 5px;"><a style="margin-left: 10px;"></a>Spectrum<br> <a>Publications</a></a>
-        <a class="btn-books" routerLink="/about" routerLinkActive="activebutton" ariaCurrentWhenActive="page">About Us</a>
-        <a class="btn-books" routerLink="/books" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Books <i class="fa fa-caret-down"></i></a>
-        <a class="btn-books" routerLink="/contact" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Contact</a>
+        <a class="btn about" routerLink="/about" routerLinkActive="activebutton" ariaCurrentWhenActive="page">About Us</a>
+        <div class="dropdown">
+            <button class="dropbtn" routerLink="/books"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="font-family: Helvetica;font-size: 1.3rem;">Books 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Engineering Books</a>
+              <a href="#">Competitive Entrances</a>
+              <a href="#">Medical Entrances</a>
+              <a href="#">Government Recruitment</a>
+              <a href="#">Post Graduation Books</a>
+            </div>
+          </div> 
+        <a class="btn contact" routerLink="/contact" routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="margin-left: -.2rem;">Contact</a>
+        
+        
     </nav>
+    
+    
     <router-outlet>
 
     </router-outlet>

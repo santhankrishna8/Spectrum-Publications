@@ -1,12 +1,20 @@
-import { Component } from '@angular/core';
+// books.component.ts
 
+import { Component,OnInit } from '@angular/core';
+import { createProductList,changeQuantity,key,quantity } from 'src/assets/books.js';
 @Component({
   selector: 'app-books',
-  standalone: true,
-  imports: [],
   templateUrl: './books.component.html',
-  styleUrl: './books.component.css'
+  styleUrls: ['./books.component.css']
 })
-export class BooksComponent {
 
+export class BooksComponent implements OnInit{
+
+  ngOnInit() {
+    createProductList();
+    
+  }
+  changeQuantity(key,quantity){
+    
+  }
 }
