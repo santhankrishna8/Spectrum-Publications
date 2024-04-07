@@ -20,8 +20,8 @@ export function createProductList() {
         },
         {
             id: 3,
-            name: "C++",
-            image: "assets/New folder/c++.png",
+            name: "CSS",
+            image: "assets/New folder/css3.png",
             price: "6000",
             rating: 4,
             quantity:0
@@ -68,8 +68,8 @@ export function createProductList() {
         },
         {
             id: 3,
-            name: "C++",
-            image: "assets/New folder/c++.png",
+            name: "CSS",
+            image: "assets/New folder/css.png",
             price: "6000",
             rating: 5,
             quantity:0
