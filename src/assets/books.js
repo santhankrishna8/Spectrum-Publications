@@ -76,8 +76,8 @@ export function createProductList() {
         },
         {
             id: 4,
-            name: "CSS",
-            image: "assets/New folder/css3.png",
+            name: "Typescript",
+            image: "assets/New folder/typescript.png",
             price: "8000",
             rating: 5,
             quantity:0
