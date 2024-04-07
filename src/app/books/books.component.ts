@@ -26,8 +26,8 @@ export class BooksComponent{
         "description": "Acme Corp",
         "image": "https://s3.amazonaws.com/rzp-mobile/images/rzp.jpg",
         "prefill": {
-          "email": "gaurav.kumar@example.com",
-          "contact": "+919900000000"
+          "email": "santhankrishna18@gmail.com",
+          "contact": "+916304349076"
         },
         "config": {
           "display": {
