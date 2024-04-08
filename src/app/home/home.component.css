@@ -71,27 +71,7 @@ h2{
     justify-content: space-evenly;
     
 }
-footer{
-    height:30lvh;
-    margin-top: -1rem;
-    background-color: black;
-    color:white;
-    display: flex;
-    justify-content: space-around;
-}
-footer ul{
-    
-    list-style-type: none;
-    
-}
-footer ul li{
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-   line-height: 1.3rem;
-   justify-content: center;
-   margin-left: -2rem;
-}
+
 
 
 

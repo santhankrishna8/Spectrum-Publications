@@ -1,17 +1,15 @@
-// books.component.ts
-import { AuthService } from './auth.service';
-import { Component,OnInit } from '@angular/core';
-import { createProductList,changeQuantity,key,quantity } from 'src/assets/books.js';
-
+import { Component } from '@angular/core';
+import { createProductList} from 'src/assets/books.js';
 declare var Razorpay: any;
 @Component({
-  selector: 'app-books',
-  templateUrl: './books.component.html',
-  styleUrls: ['./books.component.css']
+  selector: 'app-degree',
+  standalone: true,
+  imports: [],
+  templateUrl: './degree.component.html',
+  styleUrl: './degree.component.css'
 })
+export class DegreeComponent {
 
-
-export class BooksComponent{
   totalPrice: number = 0;
   constructor(){}
   ngOnInit() {
@@ -106,4 +104,5 @@ export class BooksComponent{
 function updateTotalPrice(): number {
   throw new Error('Function not implemented.');
 }
+
 

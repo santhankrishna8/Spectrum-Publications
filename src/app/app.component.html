@@ -18,8 +18,8 @@
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-              <a href="#">Engineering Books</a>
-              <a href="#">Competitive Entrances</a>
+              <a routerLink="/books"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" >Engineering Books</a>
+              <a routerLink="/degree"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" >Degree Books</a>
               <a href="#">Medical Entrances</a>
               <a href="#">Government Recruitment</a>
               <a href="#">Post Graduation Books</a>
@@ -34,5 +34,48 @@
     <router-outlet>
 
     </router-outlet>
+
+    <footer>
+      <div class="f1">
+          <h3>Spectrum Publications</h3>
+          <ul>
+              <li style="margin-top: -1.6rem;">Home</li>
+              <li>About Us</li>
+              <li>Books</li>
+              <li>Contact</li>
+          </ul>
+      </div>
+      <div class="f1">
+          <ul>
+              <li><a style="color: white;text-decoration: none;" href="/assets/Terms&Conditions.pdf" target="_blank" >Terms & Conditions</a></li>
+              <li>Privacy Policy</li>
+              <li>Contact Us</li>
+          </ul>
+      </div>
+      <div class="f1">
+          <h3>Products</h3>
+          <ul>
+              <li style="margin-top: -1rem;">Books</li>
+              
+          </ul>
+      </div>
+      <div class="f1">
+          <h3>Categories</h3>
+          <ul style="margin-top: -1rem;">
+              <li>Engineering</li>
+              <li>About Us</li>
+              <li>Books</li>
+              <li>Contact</li>
+          </ul>
+      </div>
+      <div class="f1">
+          <ul>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Books</li>
+              <li>Contact</li>
+          </ul>
+      </div>
+  </footer>
 </body>
 </html>

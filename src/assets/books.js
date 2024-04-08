@@ -1,6 +1,6 @@
 export function createProductList() {
     console.log("hello");
-    
+
     const ArrProducts = [
         {
             id: 1,
@@ -113,7 +113,7 @@ export function createProductList() {
     document.querySelector('.close').addEventListener('click', function() {
         document.querySelector('.cart').style.display = 'none';
     });
-
+    
     ArrProducts.forEach((item, key) => {
         const div = document.createElement("div");
         div.classList.add("item");
@@ -127,6 +127,8 @@ export function createProductList() {
         div.style.cursor = "pointer";
 
         let star = "";
+        
+        
         for (let i = 0; i < item.rating; i++) {
             star += `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <i style="color:#ff9c1a;" class="fa fa-star"></i>`;
@@ -140,7 +142,9 @@ export function createProductList() {
         <div class="rating" >Rating : ${star}</div>
         <button class="add-to-cart-button" data-id="${item.id}" style="background-color:black;color:#fff;padding:5px 15px;border-radius:20px;margin-top:10px;cursor:pointer;border:none;outline:none;"><i class="fa fa-cart-plus" style="font-size:20px;margin-right:5px;"></i>Add to cart</button>
         `;
+       
         products.appendChild(div);
+       
     });
 
     products.addEventListener('click', (event) => {
@@ -232,5 +236,13 @@ export function createProductList() {
         });
         total.innerHTML = `<small>Subtotal (${count} items)</small>₹` + totalPrice;
         quantity.innerHTML = count;
+        return totalPrice;
     }
 }
+
+
+
+
+
+
+

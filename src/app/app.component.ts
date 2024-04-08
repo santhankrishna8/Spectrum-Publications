@@ -13,5 +13,5 @@ export class AppComponent implements OnInit{
   title = 'Spectrum Publications';
    
   ngOnInit(){}
-
+ 
 }

@@ -1,0 +1,9 @@
+.l img{
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+.l{
+    display: flex;
+    justify-content: space-evenly;
+}
