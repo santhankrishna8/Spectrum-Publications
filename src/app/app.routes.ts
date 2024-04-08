@@ -5,6 +5,9 @@ import { AboutComponent } from './about/about.component';
 import { BooksComponent } from './books/books.component';
 import { ContactComponent } from './contact/contact.component';
 import { DegreeComponent } from './degree/degree.component';
+import { DiplomaComponent } from './diploma/diploma.component';
+import { PgComponent } from './pg/pg.component';
+import { GovtComponent } from './govt/govt.component';
 
 
 
@@ -19,5 +22,8 @@ export const routes: Routes = [
     {path:'about',component:AboutComponent},
     {path:'books',component:BooksComponent},
     {path:'contact',component:ContactComponent},
-    {path:'degree',component:DegreeComponent}
+    {path:'degree',component:DegreeComponent},
+    {path:'diploma',component:DiplomaComponent},
+    {path:'pg',component:PgComponent},
+    {path:'govt',component:GovtComponent},
 ];

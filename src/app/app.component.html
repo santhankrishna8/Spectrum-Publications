@@ -20,14 +20,15 @@
             <div class="dropdown-content">
               <a routerLink="/books"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" >Engineering Books</a>
               <a routerLink="/degree"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" >Degree Books</a>
-              <a href="#">Diploma Books</a>
-              <a href="#">Government Recruitment</a>
-              <a href="#">Post Graduation Books</a>
+              <a routerLink="/diploma"  routerLinkActive="activebutton" ariaCurrentWhenActive="page">Diploma Books</a>
+              <a routerLink="/pg"  routerLinkActive="activebutton" ariaCurrentWhenActive="page">Post Graduation Books</a>
+              <a routerLink="/govt"  routerLinkActive="activebutton" ariaCurrentWhenActive="page">Government Recruitment</a>
+              
             </div>
           </div> 
         <a class="btn contact" routerLink="/contact" routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="margin-left: -.2rem;">Contact</a>
-        
-        
+       <div class="l2" style="float: right;margin-left: 40rem;"> <a   routerLink="/home"  routerLinkActive="activebutton" ariaCurrentWhenActive="page"><img  src="/assets/logo2.jpg " /></a>
+       </div>
     </nav>
     
     
@@ -35,47 +36,44 @@
 
     </router-outlet>
 
-    <footer>
+    <footer >
       <div class="f1">
-          <h3>Spectrum Publications</h3>
+        <h3>Spectrum Publications</h3>
+        
+        <a >Head Office:</a>
+        <pre style="line-height: 1.4;margin-top: 1px;">#326/C, Near B K Guda Park
+S R Nagar, Hyderabad - 500 038,
+Telangana State, India.        
+        </pre>
+      </div>
+      <div class="f1">
+         
           <ul>
-              <li style="margin-top: -1.6rem;">Home</li>
-              <li>About Us</li>
-              <li>Books</li>
-              <li>Contact</li>
+              <li style="margin-top: 1rem; " ><a (click)="scrollToTop()" style="color:white;text-decoration: none;" routerLink="/home"  routerLinkActive="activebutton" ariaCurrentWhenActive="page">Home</a></li>
+              <li><a (click)="scrollToTop()" style="color:white;text-decoration: none;" routerLink="/about"  routerLinkActive="activebutton" ariaCurrentWhenActive="page">About Us</a></li>
+              <li><a (click)="scrollToTop()" style="color:white;text-decoration: none;" routerLink="/books"  routerLinkActive="activebutton" ariaCurrentWhenActive="page">Books</a></li>
+              <li><a (click)="scrollToTop()" style="color:white;text-decoration: none;" routerLink="/contact"  routerLinkActive="activebutton" ariaCurrentWhenActive="page">Contact</a></li>
           </ul>
       </div>
       <div class="f1">
           <ul>
               <li><a style="color: white;text-decoration: none;" href="/assets/Terms&Conditions.pdf" target="_blank" >Terms & Conditions</a></li>
-              <li>Privacy Policy</li>
+              <li><a style="color: white;text-decoration: none;" href="/assets/Privacy Policy.pdf" target="_blank" >Privacy Policy</a></li>
               <li>Contact Us</li>
           </ul>
       </div>
-      <div class="f1">
-          <h3>Products</h3>
-          <ul>
-              <li style="margin-top: -1rem;">Books</li>
-              
-          </ul>
-      </div>
+      
       <div class="f1">
           <h3>Categories</h3>
-          <ul style="margin-top: -1rem;">
-              <li>Engineering</li>
-              <li>About Us</li>
-              <li>Books</li>
-              <li>Contact</li>
+          <ul style="margin-top: -1rem; text-decoration: none;color:white;">
+            <li><a (click)="scrollToTop()" routerLink="/books"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" >Engineering Books</a></li>
+            <li><a (click)="scrollToTop()" routerLink="/degree"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" >Degree Books</a></li>
+            <li><a (click)="scrollToTop()" routerLink="/diploma"  routerLinkActive="activebutton" ariaCurrentWhenActive="page">Diploma Books</a></li>
+            <li><a (click)="scrollToTop()" routerLink="/pg"  routerLinkActive="activebutton" ariaCurrentWhenActive="page">Post Graduation Books</a></li>
+            <li><a (click)="scrollToTop()" routerLink="/govt"  routerLinkActive="activebutton" ariaCurrentWhenActive="page">Government Recruitment</a></li>
           </ul>
       </div>
-      <div class="f1">
-          <ul>
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Books</li>
-              <li>Contact</li>
-          </ul>
-      </div>
+      
   </footer>
 </body>
 </html>

@@ -1,4 +1,12 @@
-<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
 <br>
 <div class="slider-container">
  
@@ -18,46 +26,46 @@
         <div class="c1" >
             
             <img (click)="scrollToTop()" routerLink="/books"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="cursor: pointer;" src="assets/c1.png" >
-            <h3 routerLink="/books"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="margin-top: -1rem;" >Engineering Books</h3>
+            <h3 routerLink="/books"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="margin-top: -1.rem;" >Engineering Books</h3>
         </div>
         <div class="c1" >
             <img (click)="scrollToTop()" routerLink="/degree"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="cursor: pointer;"src="assets/c2.png">
-            <h3 routerLink="/degree"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="cursor: pointer;"style="margin-top: -1rem;">Degree Books</h3>
+            <h3 routerLink="/degree"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="cursor: pointer;"style="margin-top: -1.rem;">Degree Books</h3>
         </div>
         <div class="c1" >
-            <img src="assets/c3.png">
-            <h3 style="margin-top: -1rem;">Medical Entrances</h3>
+            <img (click)="scrollToTop()" routerLink="/diploma"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="cursor: pointer;" src="assets/c3.png">
+            <h3 routerLink="/diploma"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="cursor: pointer;" style="margin-top: -1rem;">Diploma Books</h3>
         </div>
         <div class="c1" >
-            <img src="assets/c4.png">
-            <h3 style="margin-top: -1rem;">Government Recruitments</h3>
+            <img (click)="scrollToTop()" routerLink="/pg"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="cursor: pointer;" src="assets/c4.png">
+            <h3  routerLink="/pg"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="margin-top: -1rem;cursor: pointer;">Post Graduation Books</h3>
         </div>
         <div class="c1" >
-            <img src="assets/c1.png">
-            <h3 style="margin-top: -1rem;">Engineering Books</h3>
+            <img (click)="scrollToTop()" routerLink="/govt"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="cursor: pointer;"  src="assets/c1.png">
+            <h3 routerLink="/govt"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="cursor: pointer;" style="margin-top: -1rem;">Government Recruitment Books</h3>
         </div>
     </div>
 </div>
-<div class="us">
-    <h2 style="text-align: center;">The Journey</h2>
-   <div class="o">
-    <div class="j">
-        <a style="font-size: 2rem;">20+</a>
-                <pre style="font-size: 1rem;">Years of
-Existence</pre>
+<br>
+<br>
+<section class="counters">
+    <div class="container">
+      <div class="counter">{{ currentCount1.toFixed() }}+</div>
+      <h3 style="text-align: center;">Years</h3>
+    </div>
+    <div class="container">
+      <div class="counter">{{ currentCount2.toFixed() }}+</div>
+      <h3 style="text-align: center;">Colleges</h3>
+    </div>
+    <div class="container">
+      <div class="counter">{{ currentCount3.toFixed() }}+</div>
+      <h3 style="text-align: center;">Students</h3>
+    </div>
+  </section>
+  
+  
+<br>
+<br>
 
-   </div>
-   <div class="j">
-       <a style="font-size: 2rem;">100+</a>
-      <pre style="font-size: 1rem;">  Dealers</pre>
-
-  </div>
-  <div class="j">
-   <a style="font-size: 2rem;">50+</a>
-  <pre style="font-size: 1rem;">Colleges</pre>
-
-</div>
-   </div>
-    
-
-</div>
+</body>
+</html>

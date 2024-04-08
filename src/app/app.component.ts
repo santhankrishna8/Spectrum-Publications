@@ -11,7 +11,10 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 })
 export class AppComponent implements OnInit{
   title = 'Spectrum Publications';
-   
+  window: any;
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
   ngOnInit(){}
  
 }
