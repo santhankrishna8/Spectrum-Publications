@@ -14,8 +14,8 @@
         <a class="btn-cn"routerLink="/home"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="margin: 5px;"><a style="margin-left: 10px;"></a>Spectrum<br> <a>Publications</a></a>
         <a class="btn about" routerLink="/about" routerLinkActive="activebutton" ariaCurrentWhenActive="page">About Us</a>
         <div class="dropdown">
-            <button class="dropbtn" routerLink="/books"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="font-family: Helvetica;font-size: 1.3rem;">Books 
-              <i class="fa fa-caret-down"></i>
+            <button class="dropbtn" routerLink="/books"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="font-family: Helvetica;font-size: 1.3rem;margin-top: .3rem;">Books 
+              <i style="margin-left: -1rem;margin-top: .8rem;" class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
               <a routerLink="/books"  routerLinkActive="activebutton" ariaCurrentWhenActive="page" >Engineering Books</a>
@@ -26,7 +26,7 @@
               
             </div>
           </div> 
-        <a class="btn contact" routerLink="/contact" routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="margin-left: -.2rem;">Contact</a>
+        <a class="btn contact" routerLink="/contact" routerLinkActive="activebutton" ariaCurrentWhenActive="page" style="margin-left: -1.4rem;">Contact</a>
        <div class="l2" style="float: right;margin-left: 40rem;"> <a   routerLink="/home"  routerLinkActive="activebutton" ariaCurrentWhenActive="page"><img  src="/assets/logo2.jpg " /></a>
        </div>
     </nav>
@@ -59,7 +59,8 @@ Telangana State, India.
           <ul>
               <li><a style="color: white;text-decoration: none;" href="/assets/Terms&Conditions.pdf" target="_blank" >Terms & Conditions</a></li>
               <li><a style="color: white;text-decoration: none;" href="/assets/Privacy Policy.pdf" target="_blank" >Privacy Policy</a></li>
-              <li>Contact Us</li>
+              <li><a style="color: white;text-decoration: none;" href="/assets/Refund Policy.pdf" target="_blank" >Refund Policy</a></li>
+              <li><a (click)="scrollToTop()" style="color:white;text-decoration: none;" routerLink="/contact"  routerLinkActive="activebutton" ariaCurrentWhenActive="page">Contact</a></li>
           </ul>
       </div>
       
@@ -72,6 +73,17 @@ Telangana State, India.
             <li><a (click)="scrollToTop()" routerLink="/pg"  routerLinkActive="activebutton" ariaCurrentWhenActive="page">Post Graduation Books</a></li>
             <li><a (click)="scrollToTop()" routerLink="/govt"  routerLinkActive="activebutton" ariaCurrentWhenActive="page">Government Recruitment</a></li>
           </ul>
+      </div>
+      <div class="f1">
+        <div class="social">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+          <ul style="list-style-type: none; margin-left: -2rem;">
+            <li><a href="https://www.facebook.com/SpectrumHelpline/"class="fa fa-facebook" aria-hidden="true" target="_blank"style="margin-top: .5rem;color:white;"></a></li>
+            <li><a href="https://wa.me/+919392575657"class="fa fa-whatsapp" aria-hidden="true" target="_blank"style="color:white;"></a></li>
+            <li><a href="https://www.linkedin.com/in/surneni-mohan-naidu-57720782/?originalSubdomain=in" class="fa fa-linkedin" target="_blank" style="color:white;"></a>  </li>
+            <li> <a href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=CllgCJlFlmDJnDpkcgmzxvRmLMlWtvKsMRGFFHCrXdpdCdLGJQkkxQNNnnPbpqkrDGDVXlPgNpg" class="fa fa-envelope" target="_blank" style="color: white;"></a>  </li>
+          </ul>
+        </div>
       </div>
       
   </footer>
