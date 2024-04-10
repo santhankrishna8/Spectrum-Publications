@@ -113,11 +113,11 @@ footer ul li{
    line-height: 1.3rem;
    justify-content: center;
    margin-left: -2rem;
-  
+   
 }
 footer ul li a{
   text-decoration: none;
-  color: white;
+  color: white;text-align: left;
 }
 .fa {
   font-size: 30px;
