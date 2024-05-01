@@ -236,13 +236,7 @@ export function createProductList() {
         });
         total.innerHTML = `<small>Subtotal (${count} items)</small>₹` + totalPrice;
         quantity.innerHTML = count;
+        
         return totalPrice;
     }
 }
-
-
-
-
-
-
-

@@ -23,8 +23,8 @@ export class DegreeComponent {
   loadRazorpay() {
     
      const options = {
-        "key": "rzp_test_B6lfefauct5aZb",
-        "amount":"1000000",
+        "key": "rzp_live_AYzcI2d6Jjq36A",
+        "amount":"1000",
         "currency": "INR",
         "description": "Acme Corp",
         "image": "https://s3.amazonaws.com/rzp-mobile/images/rzp.jpg",

@@ -1,8 +1,8 @@
 // books.component.ts
 import { AuthService } from './auth.service';
 import { Component,OnInit } from '@angular/core';
-import { createProductList,changeQuantity,key,quantity } from 'src/assets/books.js';
-
+import { createProductList,changeQuantity,key,quantity,uploadTotalprice } from 'src/assets/books.js';
+declare var totalPrice: number;
 declare var Razorpay: any;
 @Component({
   selector: 'app-books',
@@ -25,8 +25,8 @@ export class BooksComponent{
   loadRazorpay() {
     
      const options = {
-        "key": "rzp_test_B6lfefauct5aZb",
-        "amount":"1000000",
+        "key": "rzp_live_AYzcI2d6Jjq36A",
+        "amount":updateTotalPrice()*100,
         "currency": "INR",
         "description": "Acme Corp",
         "image": "https://s3.amazonaws.com/rzp-mobile/images/rzp.jpg",
@@ -104,6 +104,6 @@ export class BooksComponent{
   }
 }
 function updateTotalPrice(): number {
-  throw new Error('Function not implemented.');
+  return 10000;
 }
 
